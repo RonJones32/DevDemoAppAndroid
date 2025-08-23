@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimonToDoActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/toDoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/numItems"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="9dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="."
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="9dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/simonToDo"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+        android:id="@+id/simonToDo"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Simon's To Do:"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="9dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp"
+        />
+
+    <TextView
+        android:id="@+id/numItems"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="0"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/simonToDo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="15dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
